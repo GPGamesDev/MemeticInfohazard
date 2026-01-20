@@ -1,0 +1,20 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+image_index = pulseOn;
+draw_self();
+
+var i = 0;
+
+while(i<array_length(neuronMap)){
+	var _lineColor = c_red;
+	if(neuronMap[i][2]>=1){
+		_lineColor = c_green;
+	}
+	draw_line_width_colour(x,y,neuronMap[i][0].x,neuronMap[i][0].y,10*neuronMap[i][2],_lineColor,_lineColor);
+	i++;
+}
+
+if(synced) draw_text(x,y,"synced");
+
+draw_circle(x,y,syncRadius,true);
