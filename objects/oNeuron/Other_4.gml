@@ -2,10 +2,11 @@
 // You can write your code in this editor
 var i = 0;
 
-with(oNeuron){
-	if(id == other.id) continue;
+/*
+with(oNeuron){ //old setup
+	if(id == other.id) continue; //don't put yourself in the map
 	other.neuronMap[i][0] = id; //neuron ID
-	other.neuronMap[i][1] = distance_to_point(other.x,other.y); //distance to Neuron
+	other.neuronMap[i][1] = point_distance(x,y,other.x,other.y); //distance to Neuron
 	other.neuronMap[i][2] = 0; //sync with neuron
 	
 	if(other.presynced && master){
@@ -18,4 +19,20 @@ with(oNeuron){
 	}
 	
 	i++;
+}
+*/
+
+with(oNeuron){
+	if(id<=other.id) continue;
+	oNeuronMap.neuronMap[id][other.id][0] = point_distance(x,y,other.x,other.y);
+	oNeuronMap.neuronMap[id][other.id][1] = 0; //sync
+	
+	if(other.presynced && master){
+		oNeuronMap.neuronMap[id][other.id][1] = 1;
+		other.synced = true
+	}
+	
+	if(other.master && presynced){
+		oNeuronMap.neuronMap[id][other.id][1] = 1;
+	}
 }

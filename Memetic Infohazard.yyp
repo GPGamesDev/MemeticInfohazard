@@ -37,7 +37,10 @@
   "resources":[
     {"id":{"name":"oEnergyController","path":"objects/oEnergyController/oEnergyController.yy",},},
     {"id":{"name":"oNeuron","path":"objects/oNeuron/oNeuron.yy",},},
+    {"id":{"name":"oNeuronMap","path":"objects/oNeuronMap/oNeuronMap.yy",},},
+    {"id":{"name":"oNeuronUpgradeTest","path":"objects/oNeuronUpgradeTest/oNeuronUpgradeTest.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"scNeuron","path":"scripts/scNeuron/scNeuron.yy",},},
     {"id":{"name":"sNeuron","path":"sprites/sNeuron/sNeuron.yy",},},
   ],
   "resourceType":"GMProject",

@@ -18,5 +18,27 @@ var _pulseSynced = function(_element, _index){
 		//oEnergyController.energy += 1;
 	}
 }
-array_foreach(neuronMap,_pulseSynced);
+//array_foreach(neuronMap,_pulseSynced);
 
+with(oNeuron){
+	var _largerID;
+	var _smallerID;
+	if(id=other.id) continue;
+	if(id<other.id){
+		_largerID = other.id;
+		_smallerID = id;
+	}
+	else{
+		_largerID = id;
+		_smallerID = other.id;
+	}
+	
+	if(oNeuronMap.neuronMap[_largerID][_smallerID][1] >= 1 || synced){
+		pulseOn = true;
+		alarm[pulseOffTime] = game_get_speed(gamespeed_fps)*pulseOnTime;
+		lastPulseOn = get_timer();
+		tallyEnergy = true;
+	}
+	
+	if(pulseOn) neuronMapSync();
+}

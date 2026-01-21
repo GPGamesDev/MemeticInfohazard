@@ -9,7 +9,7 @@ pulseOnTimer = 1;
 
 pulseOn = false;
 
-pulseSyncBuffer = 1.1; //sec, time after another pulse that will cause sync
+pulseSyncBuffer = .4; //sec, time after another pulse that will cause sync
 
 lastPulseOn = 0; //the time that the pulse last turned on.  Used to determine if another pulse was soon enough to form a sync
 

@@ -4,6 +4,23 @@
 image_index = pulseOn;
 draw_self();
 
+if(synced) draw_text(x,y,"synced");
+
+draw_circle(x,y,syncRadius,true);
+
+with(oNeuron){
+	if(id<=other.id) continue;
+	var _sync = oNeuronMap.neuronMap[id][other.id][1]
+	if(_sync == 0) continue;
+	
+	var _lineColor = c_red;
+	if(_sync>=1){
+		_lineColor = c_green;
+	}
+	draw_line_width_colour(x,y,other.x,other.y,10*_sync,_lineColor,_lineColor);
+}
+
+/*
 var i = 0;
 
 while(i<array_length(neuronMap)){
@@ -14,7 +31,5 @@ while(i<array_length(neuronMap)){
 	draw_line_width_colour(x,y,neuronMap[i][0].x,neuronMap[i][0].y,10*neuronMap[i][2],_lineColor,_lineColor);
 	i++;
 }
+*/
 
-if(synced) draw_text(x,y,"synced");
-
-draw_circle(x,y,syncRadius,true);
