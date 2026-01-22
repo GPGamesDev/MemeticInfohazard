@@ -4,9 +4,13 @@
 image_index = pulseOn;
 draw_self();
 
-if(synced) draw_text(x,y,"synced");
+if(!synced){
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_middle);
+	draw_text_transformed(x,y,string(manualPulseCost),2,2,0);
+}
 
-draw_circle(x,y,syncRadius,true);
+if(mouseOver) draw_circle(x,y,syncRadius,true);
 
 with(oNeuron){
 	if(id<=other.id) continue;

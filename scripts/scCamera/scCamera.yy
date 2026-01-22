@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scCamera",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scCamera",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -15,8 +15,6 @@ lastPulseOn = 0; //the time that the pulse last turned on.  Used to determine if
 
 syncRadius = 150; //the radius at which this neuron can sync.  maybe affected by powerups?
 
-manualPulseCost = 10;
-
 tallyEnergy = false;
 
 if(master){
@@ -26,3 +24,5 @@ if(master){
 neuronMap[0][0] = 0;
 
 synced = false;
+
+mouseOver = false;
