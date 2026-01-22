@@ -9,7 +9,9 @@ cameraHalfWidth = _camWidth/2;
 cameraHalfHeight = _camHeight/2;
 aspectRatio = _camWidth/_camHeight;
 
-cameraCenter = [camera_get_view_x(myCamera)+cameraHalfWidth, camera_get_view_y(myCamera)+cameraHalfHeight];
+cameraCenter = [oMasterNeuron.x, oMasterNeuron.y];
+
+camera_set_view_pos(myCamera,cameraCenter[0]-cameraHalfWidth,cameraCenter[1]-cameraHalfHeight);
 
 zoomDelta = 5;
 
