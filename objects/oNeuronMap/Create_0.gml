@@ -3,6 +3,11 @@
 
 neuronMap[0][0][0][0] = 0;
 
-mappedRooms[Room1] = false;
-mappedRooms[BrainLevel] = false;
-mappedRooms[PeopleLevel] = false;
+mappedRooms[0] = false;
+
+var i = 0;
+
+while(i<global.roomCount){
+	mappedRooms[global.roomOrder[i]] = false;
+	i++;
+}

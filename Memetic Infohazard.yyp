@@ -47,6 +47,7 @@
     {"id":{"name":"PeopleLevel","path":"rooms/PeopleLevel/PeopleLevel.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"scCamera","path":"scripts/scCamera/scCamera.yy",},},
+    {"id":{"name":"scGlobal","path":"scripts/scGlobal/scGlobal.yy",},},
     {"id":{"name":"scNeuron","path":"scripts/scNeuron/scNeuron.yy",},},
     {"id":{"name":"sCostReduceNeuron","path":"sprites/sCostReduceNeuron/sCostReduceNeuron.yy",},},
     {"id":{"name":"sMasterNeuron","path":"sprites/sMasterNeuron/sMasterNeuron.yy",},},

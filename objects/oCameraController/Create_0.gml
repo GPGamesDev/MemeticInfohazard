@@ -24,8 +24,6 @@ lastMouseX = mouse_x;
 lastMouseY = mouse_y;
 screenScrollSpeed = .01;
 
-roomOrder = [Room1,BrainLevel,PeopleLevel];
-roomCount = array_length(roomOrder)-1;
 currentRoom = 0;
 lastRoom = 0;
 cameraWidthMax = 1000;
