@@ -43,6 +43,8 @@
     {"id":{"name":"oNeuronMap","path":"objects/oNeuronMap/oNeuronMap.yy",},},
     {"id":{"name":"oNeuronUpgradeTest","path":"objects/oNeuronUpgradeTest/oNeuronUpgradeTest.yy",},},
     {"id":{"name":"oRadiusUpgradeNeuron","path":"objects/oRadiusUpgradeNeuron/oRadiusUpgradeNeuron.yy",},},
+    {"id":{"name":"BrainLevel","path":"rooms/BrainLevel/BrainLevel.yy",},},
+    {"id":{"name":"PeopleLevel","path":"rooms/PeopleLevel/PeopleLevel.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"scCamera","path":"scripts/scCamera/scCamera.yy",},},
     {"id":{"name":"scNeuron","path":"scripts/scNeuron/scNeuron.yy",},},
@@ -55,6 +57,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"BrainLevel","path":"rooms/BrainLevel/BrainLevel.yy",},},
+    {"roomId":{"name":"PeopleLevel","path":"rooms/PeopleLevel/PeopleLevel.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

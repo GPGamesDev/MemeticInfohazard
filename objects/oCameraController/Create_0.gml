@@ -3,6 +3,10 @@
 
 myCamera = view_camera[0];
 
+cameraInitialWidth = 683;
+cameraInitialHeight = 384;
+aspectRatio = cameraInitialWidth/cameraInitialHeight;
+/*
 var _camWidth = camera_get_view_width(myCamera);
 var _camHeight = camera_get_view_height(myCamera);
 cameraHalfWidth = _camWidth/2;
@@ -12,9 +16,19 @@ aspectRatio = _camWidth/_camHeight;
 cameraCenter = [oMasterNeuron.x, oMasterNeuron.y];
 
 camera_set_view_pos(myCamera,cameraCenter[0]-cameraHalfWidth,cameraCenter[1]-cameraHalfHeight);
+*/
 
-zoomDelta = 5;
+zoomDelta = 10;
 
 lastMouseX = mouse_x;
 lastMouseY = mouse_y;
 screenScrollSpeed = .01;
+
+roomOrder = [Room1,BrainLevel,PeopleLevel];
+roomCount = array_length(roomOrder)-1;
+currentRoom = 0;
+lastRoom = 0;
+cameraWidthMax = 1000;
+cameraWidthMin = 500;
+
+fadeBuffer = 100;

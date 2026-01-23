@@ -18,3 +18,14 @@ if(mouse_check_button(mb_right)){
 	//lastMouseX = mouse_x;
 	//lastMouseY = mouse_y;
 }
+
+if(cameraHalfWidth*2>=cameraWidthMax && currentRoom < roomCount){
+	lastRoom = currentRoom;
+	currentRoom++;
+	room_goto(roomOrder[currentRoom]);
+}
+if(cameraHalfWidth*2<=cameraWidthMin && currentRoom > 0){
+	lastRoom = currentRoom;
+	currentRoom--;
+	room_goto(roomOrder[currentRoom]);
+}

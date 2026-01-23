@@ -21,18 +21,26 @@ with(oNeuron){ //old setup
 	i++;
 }
 */
+if(oNeuronMap.mappedRooms[room]){
+	with(oNeuron){
+		if(id<=other.id) continue;
+		if(oNeuronMap.neuronMap[room][id][other.id][1] >= 1) synced = true;
+	}
+	exit;
+}
+
 
 with(oNeuron){
 	if(id<=other.id) continue;
-	oNeuronMap.neuronMap[id][other.id][0] = point_distance(x,y,other.x,other.y);
-	oNeuronMap.neuronMap[id][other.id][1] = 0; //sync
+	oNeuronMap.neuronMap[room][id][other.id][0] = point_distance(x,y,other.x,other.y);
+	oNeuronMap.neuronMap[room][id][other.id][1] = 0; //sync
 	
 	if(other.presynced && master){
-		oNeuronMap.neuronMap[id][other.id][1] = 1;
+		oNeuronMap.neuronMap[room][id][other.id][1] = 1;
 		other.synced = true
 	}
 	
 	if(other.master && presynced){
-		oNeuronMap.neuronMap[id][other.id][1] = 1;
+		oNeuronMap.neuronMap[room][id][other.id][1] = 1;
 	}
 }

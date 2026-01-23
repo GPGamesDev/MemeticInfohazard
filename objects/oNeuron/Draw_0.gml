@@ -14,7 +14,7 @@ if(mouseOver) draw_circle(x,y,syncRadius,true);
 
 with(oNeuron){
 	if(id<=other.id) continue;
-	var _sync = oNeuronMap.neuronMap[id][other.id][1]
+	var _sync = oNeuronMap.neuronMap[room][id][other.id][1]
 	if(_sync == 0) continue;
 	
 	var _lineColor = c_red;

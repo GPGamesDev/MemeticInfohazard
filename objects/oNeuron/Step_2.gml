@@ -8,7 +8,7 @@ var _energyDelta = 0;
 
 with(oNeuron){
 	if(id<=other.id) continue;
-	var _sync = oNeuronMap.neuronMap[id][other.id][1];
+	var _sync = oNeuronMap.neuronMap[room][id][other.id][1];
 	
 	if (_sync >= 1) _energyDelta++;
 }

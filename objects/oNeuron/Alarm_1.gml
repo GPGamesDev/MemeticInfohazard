@@ -33,7 +33,7 @@ with(oNeuron){
 		_smallerID = other.id;
 	}
 	
-	if(oNeuronMap.neuronMap[_largerID][_smallerID][1] >= 1 || synced){
+	if(oNeuronMap.neuronMap[room][_largerID][_smallerID][1] >= 1 || synced){
 		pulseOn = true;
 		alarm[pulseOffTime] = game_get_speed(gamespeed_fps)*pulseOnTime;
 		lastPulseOn = get_timer();

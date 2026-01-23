@@ -4,13 +4,13 @@ function neuronMapSync(){
 
 with(oNeuron){
 	if(id<=other.id) continue;
-	if(oNeuronMap.neuronMap[id][other.id][1]>=1) continue;
-	if(oNeuronMap.neuronMap[id][other.id][0]>=syncRadius) continue;
+	if(oNeuronMap.neuronMap[room][id][other.id][1]>=1) continue;
+	if(oNeuronMap.neuronMap[room][id][other.id][0]>=syncRadius) continue;
 	if((get_timer() - min(lastPulseOn,other.lastPulseOn))/1000000 >= pulseSyncBuffer) continue;
 	
 	if(abs(lastPulseOn - other.lastPulseOn)/1000000 < pulseSyncBuffer){
-		oNeuronMap.neuronMap[id][other.id][1] = min(oNeuronMap.neuronMap[id][other.id][1]+.5,1);
-		if(oNeuronMap.neuronMap[id][other.id][1]>=1){ 
+		oNeuronMap.neuronMap[room][id][other.id][1] = min(oNeuronMap.neuronMap[room][id][other.id][1]+.5,1);
+		if(oNeuronMap.neuronMap[room][id][other.id][1]>=1){ 
 			synced = true;
 			other.synced = true;
 		}
@@ -32,13 +32,13 @@ with(oNeuron){
 		_largerID = id;
 		_smallerID = other.id;
 	}
-	if(oNeuronMap.neuronMap[_largerID][_smallerID][1]>=1) continue;
-	if(oNeuronMap.neuronMap[_largerID][_smallerID][0]>=syncRadius) continue;
+	if(oNeuronMap.neuronMap[room][_largerID][_smallerID][1]>=1) continue;
+	if(oNeuronMap.neuronMap[room][_largerID][_smallerID][0]>=syncRadius) continue;
 	if((get_timer() - min(lastPulseOn,other.lastPulseOn))/1000000 >= pulseSyncBuffer) continue;
 	
 	if(abs(lastPulseOn - other.lastPulseOn)/1000000 < pulseSyncBuffer){
-		oNeuronMap.neuronMap[_largerID][_smallerID][1] = min(oNeuronMap.neuronMap[_largerID][_smallerID][1]+.5,1);
-		if(oNeuronMap.neuronMap[_largerID][_smallerID][1]>=1){ 
+		oNeuronMap.neuronMap[room][_largerID][_smallerID][1] = min(oNeuronMap.neuronMap[room][_largerID][_smallerID][1]+.5,1);
+		if(oNeuronMap.neuronMap[room][_largerID][_smallerID][1]>=1){ 
 			synced = true;
 			other.synced = true;
 		}
