@@ -26,7 +26,7 @@ screenScrollSpeed = .01;
 
 currentRoom = 0;
 lastRoom = 0;
-cameraWidthMax = 1000;
+cameraWidthMax = 2000;
 cameraWidthMin = 500;
 
 fadeBuffer = 100;

@@ -9,7 +9,7 @@ pulseOnTimer = 1;
 
 pulseOn = false;
 
-pulseSyncBuffer = .4; //sec, time after another pulse that will cause sync
+pulseSyncBuffer = .4; //sec, time before or after another pulse that will cause sync
 
 lastPulseOn = 0; //the time that the pulse last turned on.  Used to determine if another pulse was soon enough to form a sync
 
@@ -17,9 +17,11 @@ syncRadius = 150; //the radius at which this neuron can sync.  maybe affected by
 
 tallyEnergy = false;
 
+/*
 if(master){
-	alarm_set(pulseOnTimer,game_get_speed(gamespeed_fps*pulseOffTime));
+	alarm_set(pulseOnTimer,game_get_speed(gamespeed_fps)*pulseOffTime);
 }
+*/
 
 neuronMap[0][0] = 0;
 

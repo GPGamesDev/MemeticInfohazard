@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+if(energyGain == 0) exit;
 
-with(oDecayingNeuron){
-	decayRate+=.1;
-}
+lastEnergyGain[room] = energyGain;
+
+energyGain = 0;

@@ -19,7 +19,7 @@ if(mouse_check_button(mb_right)){
 	//lastMouseY = mouse_y;
 }
 
-if(cameraHalfWidth*2>=cameraWidthMax && currentRoom < global.roomCount){
+if(cameraHalfWidth*2>=cameraWidthMax && currentRoom < global.roomCount-1){
 	lastRoom = currentRoom;
 	currentRoom++;
 	room_goto(global.roomOrder[currentRoom]);

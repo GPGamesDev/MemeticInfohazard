@@ -4,8 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-master = true;
-synced = true;
-//alarm_set(pulseOnTimer,game_get_speed(gamespeed_fps)*pulseOffTime);
-
-pulsePing = false;
+decayRate = .1;

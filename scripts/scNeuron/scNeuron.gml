@@ -46,6 +46,29 @@ with(oNeuron){
 }
 }
 
+function neuronDecay(){
+	
+with(oNeuron){
+	var _largerID;
+	var _smallerID;
+	if(id=other.id) continue;
+	if(id<other.id){
+		_largerID = other.id;
+		_smallerID = id;
+	}
+	else{
+		_largerID = id;
+		_smallerID = other.id;
+	}
+	
+	var _sync = oNeuronMap.neuronMap[room][_largerID][_smallerID][1];
+	if(_sync>=1) continue;
+	if(_sync<=0) continue;
+	
+	oNeuronMap.neuronMap[room][_largerID][_smallerID][1] = max(0,_sync-other.decayRate*delta_time/1000000);
+}
+}
+
 
 function neuronMapSync3(){
 

@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"oMasterNeuron",
+  "%Name":"oDecayingNeuron",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oMasterNeuron",
+  "name":"oDecayingNeuron",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sMasterNeuron",
-    "path":"sprites/sMasterNeuron/sMasterNeuron.yy",
+    "name":"sNeuron_1",
+    "path":"sprites/sNeuron_1/sNeuron_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

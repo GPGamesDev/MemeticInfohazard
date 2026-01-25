@@ -6,3 +6,5 @@ function scGlobal(){
 
 global.roomOrder = [Room1, BrainLevel, PeopleLevel];
 global.roomCount = array_length(global.roomOrder);
+
+global.pulseOnTime = 1;

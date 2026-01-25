@@ -22,6 +22,6 @@ while(i<array_length(neuronMap)){
 }
 */
 
-oEnergyController.energy += _energyDelta;
+oEnergyController.energyGain += _energyDelta;
 		
 tallyEnergy = false;

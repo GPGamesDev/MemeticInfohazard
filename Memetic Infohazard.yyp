@@ -37,6 +37,7 @@
   "resources":[
     {"id":{"name":"oCameraController","path":"objects/oCameraController/oCameraController.yy",},},
     {"id":{"name":"oCostReduceNeuron","path":"objects/oCostReduceNeuron/oCostReduceNeuron.yy",},},
+    {"id":{"name":"oDecayingNeuron","path":"objects/oDecayingNeuron/oDecayingNeuron.yy",},},
     {"id":{"name":"oEnergyController","path":"objects/oEnergyController/oEnergyController.yy",},},
     {"id":{"name":"oMasterNeuron","path":"objects/oMasterNeuron/oMasterNeuron.yy",},},
     {"id":{"name":"oNeuron","path":"objects/oNeuron/oNeuron.yy",},},
@@ -49,8 +50,10 @@
     {"id":{"name":"scCamera","path":"scripts/scCamera/scCamera.yy",},},
     {"id":{"name":"scGlobal","path":"scripts/scGlobal/scGlobal.yy",},},
     {"id":{"name":"scNeuron","path":"scripts/scNeuron/scNeuron.yy",},},
+    {"id":{"name":"soNeuronBlip","path":"sounds/soNeuronBlip/soNeuronBlip.yy",},},
     {"id":{"name":"sCostReduceNeuron","path":"sprites/sCostReduceNeuron/sCostReduceNeuron.yy",},},
     {"id":{"name":"sMasterNeuron","path":"sprites/sMasterNeuron/sMasterNeuron.yy",},},
+    {"id":{"name":"sNeuron_1","path":"sprites/sNeuron_1/sNeuron_1.yy",},},
     {"id":{"name":"sNeuron","path":"sprites/sNeuron/sNeuron.yy",},},
     {"id":{"name":"sRadiusUpgradeNeuron","path":"sprites/sRadiusUpgradeNeuron/sRadiusUpgradeNeuron.yy",},},
   ],

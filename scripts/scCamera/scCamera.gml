@@ -6,6 +6,9 @@ function scCamera(){
 
 function cameraZoom(_zoomIn){
 	
+	if(cameraHalfWidth * 2 > cameraWidthMax + fadeBuffer && !_zoomIn) exit;
+	if(cameraHalfWidth * 2 < cameraWidthMin - fadeBuffer && _zoomIn) exit;
+	
 	var _zoomDelta = zoomDelta;
 	if(_zoomIn) _zoomDelta *= -1;
 	

@@ -1,5 +1,10 @@
-/// @description Pulse On Timer - master only
+/// @description Insert description here
 // You can write your code in this editor
+
+// Inherit the parent event
+event_inherited();
+
+if(!pulsePing) exit;
 
 pulseOn = true;
 alarm_set(pulseOffTimer, game_get_speed(gamespeed_fps)*pulseOnTime);
@@ -30,3 +35,5 @@ with(oNeuron){
 	
 	if(pulseOn) neuronMapSync();
 }
+
+pulsePing = false;

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-with(oNeuron){
-	syncRadius-=50;
+with(oDecayingNeuron){
+	decayRate-=.1;
 }
